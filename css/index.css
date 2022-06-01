@@ -1,54 +1,97 @@
-body{
-  background-color: #9c9797c2;
+body {
   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(0deg, rgb(101, 101, 192), green );
 }
 
-header{
+header {
   display: flex;
   align-items: center;
 }
 
 nav {
-display: flex;
-width: 100%;
-align-items: center;
-justify-content: center;
-background-color: #020202;
-border-radius: 5px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+  border-radius: 5px;
 }
 
-nav li{
+nav li {
   list-style: none;
 
 }
 
-nav li a{
-  color: white;
+nav li a {
+  font-family: 'Noto Sans Display', sans-serif;
+  color: black;
   text-decoration: none;
   padding: 40px;
   font-size: 25px;
+  font-weight: 300;
 }
 
-nav li #logout{
-  justify-self: flex-end;
-}
 
 main {
   display: flex;
   justify-content: center;
-}
-
-form {
-  display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
-  width: 550px;
-  margin-top: 150px;
+
 }
 
-form input{
-  padding-bottom: 10px;
-  margin-bottom: 10px;
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.logo img {
+  margin-top: 75px;
+  height: 350px;
+}
+
+
+.logo p{
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Noto Sans Display', sans-serif;
+}
+
+.form-login {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: auto;
+  margin: 15px;
+}
+
+
+.form-login input {
+  width: 350px;
+  border-radius: 5px;
+  height: 30px;
+}
+
+.form-login p {
   font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-size: 25px;
+  color: black;
+  margin: 0;
+
+}
+
+footer{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1px;
+  background-color: black;
+  color: white;
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-size: 15px;
 }
