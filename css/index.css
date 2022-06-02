@@ -35,7 +35,6 @@ nav li a {
   font-weight: 300;
 }
 
-
 main {
   display: flex;
   justify-content: center;
@@ -52,15 +51,24 @@ main {
 }
 
 .logo .logo-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 80px;
   margin-left: 50px;
+
   width: 50%;
 }
 
 .logo .logo-img img {
-  height: 450px;
+  padding: 10px;
+  height: 400px;
   text-align: center;
-  padding-left: 45px;
+
+}
+
+.logo .logo-img img:hover {
+  height: 450px;
 }
 
 .logo .logo-span {
@@ -74,8 +82,12 @@ main {
   font-size: 45px;
   min-height: 500px;
   margin-right: 60px;
+
 }
 
+.logo .logo-span:hover {
+  font-size: 50px;
+}
 
 footer {
   position: absolute;
@@ -113,11 +125,15 @@ footer {
     height: 250px;
     text-align: center;
     padding: 0;
-    }
+  }
 
-    .logo .logo-span{
-      margin-top: 25px;
-    }
+  .logo .logo-img img:hover {
+    height: 280px;
+  }
+
+  .logo .logo-span {
+    margin-top: 25px;
+  }
 
 
   footer {
