@@ -1,8 +1,12 @@
 body {
-  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  font-family: 'MedievalSharp', cursive;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(0deg, rgb(101, 101, 192), green );
+  min-height: 100%;
+  background-image: url("../img/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 header {
@@ -15,19 +19,15 @@ nav {
   width: 100%;
   align-items: center;
   justify-content: center;
-  margin-top: 5px;
-  margin-left: 2px;
-  margin-right: 2px;
-  border-radius: 5px;
+  justify-items: center;
 }
 
 nav li {
   list-style: none;
-
+  margin-top: 25px;
 }
 
 nav li a {
-  font-family: 'Noto Sans Display', sans-serif;
   color: black;
   text-decoration: none;
   padding: 40px;
@@ -47,51 +47,83 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  text-align: center;
   width: 100%;
 }
 
-.logo img {
-  margin-top: 75px;
-  height: 350px;
+.logo .logo-img {
+  margin-top: 80px;
+  margin-left: 50px;
+  width: 50%;
 }
 
-
-.logo p{
-  font-size: 30px;
+.logo .logo-img img {
+  height: 450px;
   text-align: center;
-  font-family: 'Noto Sans Display', sans-serif;
+  padding-left: 45px;
 }
 
-.form-login {
+.logo .logo-span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  margin: 10px;
+  width: 50%;
+  text-align: center;
+  font-size: 45px;
+  min-height: 500px;
+  margin-right: 60px;
+}
+
+
+footer {
+  position: absolute;
+  display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  width: auto;
-  margin: 15px;
-}
-
-
-.form-login input {
-  width: 350px;
-  border-radius: 5px;
-  height: 30px;
-}
-
-.form-login p {
-  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
-  font-size: 25px;
-  color: black;
-  margin: 0;
-
-}
-
-footer{
+  bottom: 0;
   width: 100%;
   text-align: center;
-  margin-bottom: 1px;
   background-color: black;
   color: white;
-  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
   font-size: 15px;
+  height: 25px;
+}
+
+@media only screen and (max-width: 600px) {
+
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    min-height: 600px;
+  }
+
+  .logo .logo-img {
+    margin: 0;
+    padding: 0;
+  }
+
+  .logo .logo-img img {
+    margin-top: 60px;
+    height: 250px;
+    text-align: center;
+    padding: 0;
+    }
+
+    .logo .logo-span{
+      margin-top: 25px;
+    }
+
+
+  footer {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+
+  }
 }
