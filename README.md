@@ -5,3 +5,4 @@ Livro base TormentaRPG
 Assinaturas Devs:
 Gustavo Vargas ✌
 Carlos Klein ﴿ ﴾
+Cassiano ₢Ⱳ
