@@ -18,14 +18,17 @@
 
     <header class="header_logo">
         <!--Cabeçalho com logo e menu-->
-        <figure>
+        <section class="menu_sec">
+            <nav class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="" id="logout">Logout</a></li>
+            </nav>
+        </section>
+        <figure class="img_header">
             <img src="img/logo.png" alt="">
             <!--logo do escudo no header-->
         </figure>
-        <nav class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="" id="logout">Logout</a></li>
-        </nav>
+
     </header>
 
     <main>
@@ -36,6 +39,7 @@
             <!--Formulario do cadastro de personagem-->
             <form action="cadastro.html" method="post" class="form-login">
                 <!--  <img src="img/dice.png" alt=""> -->
+
                 <article class="info_text">
                     <h1>Preencha os dados para completar a ficha</h1>
                     <!--Cadastro de informações vindas do usuario de forma escrita-->
@@ -49,6 +53,7 @@
                     <input type="text">
                     <label for="">Deslocamento</label>
                     <input type="text">
+            
                 </article>
                 <article class="info_select">
                     <h1>Selecione os dados para completar a ficha</h1>
@@ -82,7 +87,7 @@
                         <option value="orc">Veio da Havan</option>
                     </select>
                 </article>
-
+                <button type="submit">Enviar</button>
             </form>
         </section>
 
