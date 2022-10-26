@@ -1,4 +1,5 @@
-html, body{
+html,
+body {
   height: 100%;
 }
 
@@ -7,40 +8,53 @@ body {
   margin: 0;
   padding: 0;
   height: max-content;
-  background-image: url("../img/background.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 10%, rgba(159, 85, 7, 1) 90%);
+  /*background: rgb(34, 193, 195);
+  background: radial-gradient(circle, rgba(34, 193, 195, 1) 0%, rgba(0, 0, 0, 1) 95%);
+*/
 }
 
 header {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-nav {
+nav ul {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
-  justify-items: center;
+  transition: background 2s, border-radius 1s;
 }
 
-nav li {
+nav ul:hover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 20%, transparent 80%);
+  height: 100%;
+  border-radius: 55px 20px;
+}
+
+nav ul li {
   list-style: none;
   margin-top: 25px;
+  padding: 5px;
 }
 
-nav li a {
-  color: black;
+nav ul li a {
+  color: rgb(182, 180, 180);
   text-decoration: none;
   padding: 40px;
   font-size: 25px;
   font-weight: 300;
+  transition: font-size 0.5s;
 }
 
+nav ul li a:hover {
+  font-size: 27px;
+}
+
+/*-----------------------------------fim css cabecalho-------------------------*/
 main {
   display: flex;
   justify-content: center;
@@ -49,11 +63,14 @@ main {
 }
 
 .logo {
+  width: 100%;
+}
+
+.logo article {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  width: 100%;
 }
 
 .logo .logo-img {
@@ -70,7 +87,7 @@ main {
   padding: 10px;
   height: 400px;
   text-align: center;
-
+  transition: height 3s;
 }
 
 .logo .logo-img img:hover {
@@ -88,12 +105,38 @@ main {
   font-size: 45px;
   min-height: 500px;
   margin-right: 60px;
-
+  color: rgb(182, 180, 180);
 }
 
 .logo .logo-span:hover {
   font-size: 50px;
 }
+
+/*-----------------------------------fim css logo-------------------------*/
+.infos {
+  padding-top: 200px;
+  background: rgb(159, 85, 7);
+  background: linear-gradient(0deg, rgba(159, 85, 7, 1) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.art_info {
+  display: flex;
+  width: 100%;
+}
+
+.text_art {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.text_art p {
+  text-align: justify;
+  margin-left: 55px;
+}
+
 
 footer {
   position: absolute;
