@@ -1,26 +1,35 @@
 body {
     font-family: 'MedievalSharp', cursive;
-    background-image: url("../img/background.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: rgb(34, 193, 195);
+    background: radial-gradient(circle, rgba(34, 193, 195, 1) 0%, rgba(0, 0, 0, 1) 95%);
+
 }
 
 .header_logo {
     display: flex;
     margin: 25px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.menu_sec {
+    display: flex;
+    align-items: baseline;
 }
 
 .header_logo img {
     height: 250px;
-    margin-left: 250px;
-    margin-top: 70px
+}
+
+.img_header{
+    display: flex;
+    justify-content: center;
 }
 
 .menu {
     display: flex;
     align-items: center;
-    margin-left: 40%;
+    justify-content: baseline;
 }
 
 .menu li {
@@ -30,33 +39,35 @@ body {
 
 .menu li a {
     font-size: 25px;
-    color: black;
+    color: rgb(34, 193, 195);
     text-decoration: none;
 }
 
 .menu li a:hover {
-    font-size: 35px;
+    color: rgb(21, 147, 149);
 }
 
 /*-----------------------------------fim css cabecalho-------------------------*/
-.art_header{
+.art_header {
     display: flex;
     justify-content: center;
 }
-.art_header h1{
+
+.art_header h1 {
     font-size: 35px;
 }
 
-form{
+form {
     width: 90%;
-    border: 1px solid black;
-    border-radius: 5px;
 }
+
 .form-login {
     display: flex;
+    flex-direction: column;
     width: 100%;
-    align-items: baseline;
+    align-items: center;
 }
+
 
 .info_text {
     display: flex;
@@ -104,4 +115,17 @@ form{
     width: 100%;
 }
 
+.form-login button {
+    text-align: center;
+    font-size: 15px;
+    padding: 5px;
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 10px;
+    transition: width 2s, height 2s;
+}
 
+.form-login button:hover{
+    width: 250px;
+} 
