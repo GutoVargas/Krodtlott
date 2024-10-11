@@ -1,0 +1,75 @@
+/*
+@media (min-width:320px) {  smartphones, portrait iPhone, portrait 480x320 phones (Android)  }
+@media (min-width:480px) {  smartphones, Android phones, landscape iPhone  }
+@media (min-width:600px) {  portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android)  }
+@media (min-width:801px) {  tablet, landscape iPad, lo-res laptops ands desktops  }
+@media (min-width:1025px) {  big landscape tablets, laptops, and desktops  }
+@media (min-width:1281px) {  hi-res laptops and desktops  }
+*/
+
+
+@media (min-width:320px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: aqua;
+    }
+}
+
+@media (min-width:480px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(4, 255, 0);
+    }
+}
+
+@media (min-width:600px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(221, 255, 0);
+    }
+}
+
+@media (min-width:801px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(21, 0, 255);  
+    }
+}
+
+@media (min-width:1025px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(255, 89, 0);
+    }
+}
+
+@media (min-width:1281px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(255, 0, 0);
+    }
+}
